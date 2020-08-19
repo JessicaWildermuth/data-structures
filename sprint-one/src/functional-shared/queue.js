@@ -16,7 +16,7 @@ dequeue() - Remove and return the string at the front of the queue
 size() - Return the number of items in the queue
 */
 
-
+// Functional-shared: Use _.extend  to copy the methods onto the instance & 'this' in the methods
 var Queue = function() {
   // generate object
   var someInstance = {};
@@ -24,6 +24,7 @@ var Queue = function() {
   // Use _.extend  to copy the methods onto the instance
   _(someInstance).extend(queueMethods);
 
+  // * Instead of declaring var => connect object with propery
   someInstance._storage = {};
   someInstance._start = 0;
   someInstance._end = 0;

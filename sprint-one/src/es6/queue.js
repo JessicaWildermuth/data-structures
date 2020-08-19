@@ -12,6 +12,15 @@ Return the instance explicitly
 Add class methods to the class prototype directly
 */
 
+/* Queue
+// A queue works like a line for an amusement park ride -- people enter at the end of the queue and leave from the front
+//(FIFO: first in, first out).
+
+enqueue(string) - Add a string to the back of the queue
+dequeue() - Remove and return the string at the front of the queue
+size() - Return the number of items in the queue
+*/
+
 // var Queue = function() {
 class Queue {
   // Create Queue constructor -- this.
