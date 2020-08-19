@@ -20,16 +20,13 @@ size() - Return the number of items in the queue
 
 // Pseudoclassical: create instances with the keyword new & the keyword this in your constructor
 var Queue = function() {
-  // generate object
-    // var someInstance = {};
-    // var someInstance = Object.create(queueMethods);
+  // generate object -- none
 
   // Create Queue constructor -- this.
   this._storage = {};
   this._start = 0;
   this._end = 0;
 
-  // return someInstance;
 };
 
 //Create an object that holds the methods that will be shared by all instances of the class
