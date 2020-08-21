@@ -30,5 +30,3 @@ var Stack = function() {
 
   return someInstance;
 };
-
-//when called return {{}}
