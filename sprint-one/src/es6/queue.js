@@ -1,6 +1,4 @@
 class Queue {
-  // Hey! Rewrite in the new style. Your code will wind up looking very similar,
-  // but try not not reference your old code in writing the new style.
   constructor() {
     this.storage = {};
     this.sizeCount = 0;
@@ -23,7 +21,6 @@ class Queue {
     var howMany = Object.keys(this.storage).length;
     return howMany;
   }
-
 }
 
 
