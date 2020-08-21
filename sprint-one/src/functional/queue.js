@@ -1,11 +1,11 @@
 var Queue = function() {
   var someInstance = {};
-  //   //size varaible to keep track of the size of the queue for all property methods to access
+  //size varaible to keep track of the size of the queue for all property methods to access
   var size = 0;
-  //   // Use an object with numeric keys to store values
+  // Use an object with numeric keys to store values
   var storage = {};
 
-  //   // Implement the methods below
+  // Implement the methods below
 
   someInstance.enqueue = function(value) {
     //the queue is add to the back
