@@ -21,7 +21,6 @@ describe('binarySearchTree', function() {
   });
 
   it('should have a working "contains" method', function() {
-    debugger;
     binarySearchTree.insert(2);
     binarySearchTree.insert(3);
     binarySearchTree.insert(7);
