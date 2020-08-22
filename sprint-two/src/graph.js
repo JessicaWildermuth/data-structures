@@ -10,7 +10,9 @@ var Graph = function() {
 
 // Add a node to the graph, passing in the node's value.
 Graph.prototype.addNode = function(node) {
-  this.nodes[node] = node;
+  if (typeof node === 'number') {
+    this.nodes[node] = node;
+  }
 };
 
 

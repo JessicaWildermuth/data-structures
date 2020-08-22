@@ -14,7 +14,6 @@ describe('hashTable', function() {
   });
 
   it('should store values that were inserted', function() {
-    debugger;
     hashTable.insert('Steven', 'Seagal');
     expect(hashTable.retrieve('Steven')).to.equal('Seagal');
   });
@@ -74,4 +73,6 @@ describe('hashTable', function() {
     hashTable.remove('Mr.');
     expect(hashTable._limit).to.equal(8);
   });
+
+  // Extra test
 });
