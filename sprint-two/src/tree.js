@@ -33,7 +33,7 @@ treeMethods.contains = function(target) {
       targetFound = true;
     } else if (tree.children.length !== 0) {
       for (let i = 0; i < tree.children.length; i++) {
-        checkChildren(tree.children[i])
+        checkChildren(tree.children[i]);
       }
     }
 

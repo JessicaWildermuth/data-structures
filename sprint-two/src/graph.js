@@ -44,7 +44,7 @@ Graph.prototype.removeNode = function(node) {
 // Returns a boolean indicating whether two specified nodes are connected.  Pass in the values contained in each of the two nodes.
 Graph.prototype.hasEdge = function(fromNode, toNode) {
   // if fromNode of edges has the value of toNode
-    // return true
+  // return true
   // otherwise, false
   return this.edges[fromNode] === toNode;
 
@@ -72,7 +72,7 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
 //  traverses through the graph, calling a passed in function once on each node
 Graph.prototype.forEachNode = function(cb) {
   // iterate over the key of this.nodes
-    // run the callback fn and passing they key
+  // run the callback fn and passing they key
   for (let key in this.nodes) {
     cb(this.nodes[key]);
     // cb(key); -- even though key and value are the same here,
