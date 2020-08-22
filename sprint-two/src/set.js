@@ -9,12 +9,14 @@ var Set = function() {
 var setPrototype = {};
 
 setPrototype.add = function(item) {
-  //if item is not in set storage
-  if (!this._storage.hasOwnProperty(item)) {
-    //add the item to the array
-    this._storage[item] = item;
+  if (typeof item === 'string') {
+    //if item is not in set storage
+    if (!this._storage.hasOwnProperty(item)) {
+      //add the item to the array
+      this._storage[item] = item;
 
-    // ? this._storage[item]  => doesn't add item because there is no value set to it
+      // ? this._storage[item]  => doesn't add item because there is no value set to it
+    }
   }
 };
 

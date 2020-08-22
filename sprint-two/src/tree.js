@@ -16,8 +16,10 @@ var treeMethods = {};
 treeMethods.addChild = function(value) {
   // creating new tree and set it as child
   let child = Tree(value);
+  if (child.value) {
   // add the child to tree children
-  this.children.push(child);
+    this.children.push(child);
+  }
 
 // Where is root node? already exists?
 };

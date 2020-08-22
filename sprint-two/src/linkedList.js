@@ -15,14 +15,15 @@ var LinkedList = function() {
   list.addToTail = function(value) {
     // create new node (has property of value, next)
     var newNode = Node(value);
-
-    if (!list.head) {
-      list.head = newNode;
-    } else {
-      list.tail.next = newNode;
+    if (newNode.value) {
+      if (!list.head) {
+        list.head = newNode;
+      } else {
+        list.tail.next = newNode;
+      }
+      list.tail = newNode;
     }
-    list.tail = newNode;
-  };
+   };
 
   list.removeHead = function() {
     // create variable currentHead to hold head node

@@ -41,4 +41,9 @@ describe('tree', function() {
     expect(tree.contains(8)).to.equal(true);
   });
 
+  it('should not add a node if it has no value', function() {
+    tree.addChild(3);
+    tree.addChild();
+    expect(tree.children.length).to.equal(1);
+  })
 });

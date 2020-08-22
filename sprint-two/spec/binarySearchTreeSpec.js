@@ -37,4 +37,11 @@ describe('binarySearchTree', function() {
     binarySearchTree.depthFirstLog(func);
     expect(array).to.eql([5, 2, 3, 7]);
   });
+
+  it('should not add a value if it is not a number', function() {
+    binarySearchTree.insert(2);
+    binarySearchTree.insert('This should not be added!');
+    expect(binarySearchTree.contains(2)).to.equal(true);
+    expect(binarySearchTree.contains('This should not be added!')).to.equal(false);
+  })
 });
