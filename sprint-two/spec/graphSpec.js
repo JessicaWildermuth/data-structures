@@ -15,6 +15,7 @@ describe('graph', function() {
     expect(graph.forEachNode).to.be.a('function');
   });
 
+
   it('should store values as nodes that were inserted', function() {
     graph.addNode(1);
     expect(graph.contains(1)).to.equal(true);
