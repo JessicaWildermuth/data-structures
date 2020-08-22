@@ -5,7 +5,7 @@ var Tree = function(value) {
 
   // your code here
   _.extend(newTree, treeMethods);
-  newTree.children = [];  // fix me
+  newTree.children = []; // fix me
 
   return newTree;
 };
@@ -16,8 +16,10 @@ var treeMethods = {};
 treeMethods.addChild = function(value) {
   // creating new tree and set it as child
   let child = Tree(value);
+  if (child.value) {
   // add the child to tree children
-  this.children.push(child);
+    this.children.push(child);
+  }
 
 // Where is root node? already exists?
 };
@@ -33,7 +35,7 @@ treeMethods.contains = function(target) {
       targetFound = true;
     } else if (tree.children.length !== 0) {
       for (let i = 0; i < tree.children.length; i++) {
-        checkChildren(tree.children[i])
+        checkChildren(tree.children[i]);
       }
     }
 

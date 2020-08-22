@@ -15,6 +15,7 @@ describe('graph', function() {
     expect(graph.forEachNode).to.be.a('function');
   });
 
+
   it('should store values as nodes that were inserted', function() {
     graph.addNode(1);
     expect(graph.contains(1)).to.equal(true);
@@ -68,4 +69,10 @@ describe('graph', function() {
     expect(graph.hasEdge(3, 5)).to.equal(true);
     expect(graph.hasEdge(5, 5)).to.equal(true);
   });
+
+  it('should not add a node if the value is not an integer', function() {
+    graph.addNode(3);
+    graph.addNode('hello');
+    expect(graph.contains('hello')).to.equal(false);
+  })
 });
