@@ -26,7 +26,7 @@ btsMethods.insert = function(value) {
       this.right = newBTS;
     } else {
       // check right is already occupied,
-       // use recursive.
+      // use recursive.
       this.right.insert(value);
     }
   } else if (value < this.value) {
@@ -38,15 +38,15 @@ btsMethods.insert = function(value) {
     }
   }
 };
-  //contains method
+//contains method
 btsMethods.contains = function(target) {
   // check if root value is equal to the target
   if (this.value === target) {
     return true;
   }
-    //if no
-    //chech if it is greater or less than
-    //if greater, repeat with right property of root
+  //if no
+  //chech if it is greater or less than
+  //if greater, repeat with right property of root
   if (target < this.value && this.left) {
     return this.left.contains(target);
     // after recursive, come back here and return
@@ -59,22 +59,22 @@ btsMethods.contains = function(target) {
   // check every element, and then if there is no matching, return
   // false at the end
 };
-  //depthFirstLog method
+//depthFirstLog method
 btsMethods.depthFirstLog = function(cb) {
   // if this.value exists
   if (this.value) {
     //call the cb function on this.value
-    cb(this.value)
+    cb(this.value);
   }
-    // check the left exist
+  // check the left exist
   if (this.left) {
     // this.left call depthFirstLog
-    this.left.depthFirstLog(cb)
+    this.left.depthFirstLog(cb);
   }
   if (this.right) {
     // check the right exist
     // this.right call depthFirstLog
-    this.right.depthFirstLog(cb)
+    this.right.depthFirstLog(cb);
   }
 };
 
